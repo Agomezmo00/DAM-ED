@@ -78,7 +78,7 @@ Hay dos enfoques para trazar este tipo de pruebas:
 
 ### Pruebas de validación
 
-*Las pruebas de validación en la ingeniería de software son el proceso de revisión que verifica que el sistema de software producido que cumple con las especificaciones y que logra su cometido* [Wikipedia, pruebas de validación]https://es.wikipedia.org/wiki/Pruebas_de_validaci%C3%B3n).
+*Las pruebas de validación en la ingeniería de software son el proceso de revisión que verifica que el sistema de software producido que cumple con las especificaciones y que logra su cometido.* [Wikipedia, pruebas de validación](https://es.wikipedia.org/wiki/Pruebas_de_validaci%C3%B3n)
 
 Se entiede que el software es válido cuando funciona de acuerdo a la especificación de requisitos. Son pruebas de caja negra y se contemplan dos técnicas:
 
