@@ -87,5 +87,10 @@ Se entiede que el software es válido cuando funciona de acuerdo a la especifica
 
 ### Pruebas del sistema
 
+Son una ejecución más global del software y verifican los siguientes aspectos:
+
+* Resistencia. Se pretende llevar el producto a situaciones límite para evaluar la capacidad de respuesta en situaciones de alta demanda.
+* Seguridad. Buscan verificar que el producto está protegido contra fenómenos como los accesos ilegales, etc.
+* Recuperación. Se trata de forzar fallos en el software para comprobar la capacidad de recuperación del mismo.
 
 
