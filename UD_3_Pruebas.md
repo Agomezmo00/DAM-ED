@@ -69,12 +69,12 @@ Al crear pruebas unitarias, es interesante tener en cuenta los principios [FIRST
 Hay dos enfoques para trazar este tipo de pruebas:
 
 * Incremental.
-	** Se construye y se prueba el software completo dividido en pequeños segmentos. Hay dos estrategias; ascendente y descendente. Mediante la primera, se comienza desde los módulos de los niveles más bajos (los menos relevantes) a los más importantes y viceversa en la segunda, que iría del módulo (o clase) principal a las secundarias. 
+	* Se construye y se prueba el software completo dividido en pequeños segmentos. Hay dos estrategias; ascendente y descendente. Mediante la primera, se comienza desde los módulos de los niveles más bajos (los menos relevantes) a los más importantes y viceversa en la segunda, que iría del módulo (o clase) principal a las secundarias. 
 
-	Planteando la estructura de clases como un árbol, el enfoque ascendente pretende ir de las hojas a la raíz, mientras que la descendente pretende hacerlo desde la raíz a las hojas.
+	* Planteando la estructura de clases como un árbol, el enfoque ascendente pretende ir de las hojas a la raíz, mientras que la descendente pretende hacerlo desde la raíz a las hojas.
 
 * No incremental
-	** Consiste en la prueba de todo el proyecto *de golpe*. No se aconseja este enfoque porque la aparición de errores es abundante y no se facilita su corrección.
+	 * Consiste en la prueba de todo el proyecto *de golpe*. No se aconseja este enfoque porque la aparición de errores es abundante y no se facilita su corrección.
 
 ### Pruebas de validación
 
