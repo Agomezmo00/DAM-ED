@@ -124,7 +124,7 @@ La complejidad ciclomática V(G) se puede calcular al menos de tres formas difer
 * V(G) = Nodos predicado + 1.
 
 ```java
-int a, b, c;
+// a, b, c integers
 
 if(a == 50) {
 	if(b > c) {
