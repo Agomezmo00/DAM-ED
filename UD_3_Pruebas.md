@@ -94,3 +94,62 @@ Son una ejecución más global del software y verifican los siguientes aspectos:
 * Recuperación. Se trata de forzar fallos en el software para comprobar la capacidad de recuperación del mismo.
 
 
+## Pruebas de código
+
+Consisten en la ejecución de los programas con el fin de localizar errores o fallos en los mismos. Para ello hay que definir una serie de entradas así como los resultados que se espera obtener a partir de ellas. Hay que observar si el funcionamiento se ajusta a lo esperado o no y por qué.
+
+### Camino básico (Complejidad ciclomática) 
+Es una prueba de caja blanca. Demuestra el conjunto de pasos base del programa, pretende lograr es que cada sentencia de código se ejecute como mínimo una vez.
+
+Se trata de una técnica de prueba que permite al diseñador de casos de prueba obtener una medida de la complejidad lógica de un diseño procedimental y usar esa medida como guía para la definición de un conjunto básico diseño de casos de prueba de caminos de ejecución, los casos de prueba derivados del conjunto básico garantizan que durante la prueba se ejecuta por lo menos una vez cada sentencia del programa.
+
+La idea es derivar casos de prueba a partir de un conjunto dado de caminos independientes por los cuales puede circular el flujo de control. Para obtener dicho conjunto de caminos independientes se construye el Grafo de Flujo asociado y se calcula su [complejidad ciclomática](https://es.wikipedia.org/wiki/Complejidad_ciclomática).
+
+
+![alt-text](https://upload.wikimedia.org/wikipedia/commons/6/69/Grafo_de_control_de_flujo.gif "grafos de flujo de wikipedia")
+
+Ejemplos de grafos de control de flujo: Secuencial, condicional (if), Mientras que (while), repetir hasta (do... while), casos múltiples (switch). Se construyen grafos a partir de los diagramas de flujo. 
+
+* Los círculos (o nodos) representan las sentencias sin bifurcaciones, 
+* Las flechas (o enlaces) representan el flujo de control. 
+* El área delimitada por aristas o nodos se denomina región.
+* A los nodos que contienen condiciones y por ello tienen más de una salida se los denomina nodos predicado. 
+
+
+
+La complejidad ciclomática V(G) se puede calcular al menos de tres formas diferentes:
+
+* V(G) = número de regiones del grafo.
+* V(G) = Aristas - Nodos + 2.
+* V(G) = Nodos predicado + 1.
+
+```java
+int a, b, c;
+
+if(a == 50) {
+	if(b > c) {
+		a = b;
+	} else {
+		a = c;
+	}
+}
+
+System.out.println(a);
+
+/* 
+	* En función de los valores, se ejecutan unas sentencias u otras
+	* Hacer el diagrama de flujo
+	* Dibujar el grafo de flujo para el código anterior
+	* Calcular la complejidad ciclomática
+*/
+
+```
+
+_Ejercicio_:
+
+_Crea el diagrama y grafo de flujo para un programa que admite hasta 10 números enteros y cuenta cuántos son pares e impares. Calcula la complejidad ciclomática del grafo creado y define los caminos básicos._
+
+
+### Clases de equivalencia
+
+### Condiciones límite
