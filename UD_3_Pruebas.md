@@ -50,7 +50,7 @@ A la hora de llevar a cabo las pruebas, se plantean una serie de estrategias que
 
 ### Pruebas unitarias
 
-*Una prueba unitaria es una forma de probar el correcto funcionamiento de un módulo de código. Esto sirve para asegurar que cada uno de los módulos funcione correctamente por separado.*  Fuente: [Wikipedia, Caso de prueba](https://es.wikipedia.org/wiki/prueba_unitaria)
+*Una prueba unitaria es una forma de probar el correcto funcionamiento de un módulo de código. Esto sirve para asegurar que cada uno de los módulos funcione correctamente por separado.*  Fuente: [Wikipedia, Pruebas Unitarias](https://es.wikipedia.org/wiki/prueba_unitaria)
 
 En el contexto que nos ocupa podemos decir que pretencden probar el comportamiento adecuado de las clases de manera aislada. Así, se prueban las clases aislándolas de su interacción con otras. Se trata de probar aspectos como:
 
