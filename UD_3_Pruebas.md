@@ -145,6 +145,24 @@ System.out.println(a);
 
 ```
 
+Para determinar el riesgo de un código evaluado mediante este sistema se ha establecido lo siguiente:
+
+| Complejidad ciclomática | Riesgo potencial | 
+| :------- | :------: | 
+| 1 <= V(G) <= 10  | Riesgo bajo    | 
+| 11 <= V(G) <= 20   | Riesgo moderado  | 
+| 21 <= V(G) <= 50   | Riesgo alto  | 
+| V(G) > 50   | Riesgo muy alto  | 
+
+El valor de V(G) proporciona el número de caminos independientes del conjunto básico de un programa. Un *camino independiente* es cualquier camino del programa que introduce, por lo menos, una condición o conjunto de sentencias. En el diagrama de flujo, un camino independiente constituye una arista (al menos) que no ha sido recorrida previamente en la definición del camino.
+
+
+### Obtención de casos de prueba
+
+El último paso de este tipo de pruebas es determina los casos de prueba que llevan a la ejecución de cada camino. A fin de comprobar cada camino, se escogerán los casos de prueba de manera que las condiciones de los nodos predicado estén adecuadamente establecidas.
+
+Una forma de representar el conjunto de casos de prueba es mediante una tabla en la que indicar el número de camino, la explicación del caso de prueba y el resultado que se espera obtener de dicho caso de prueba.
+
 _Ejercicio_:
 
 _Crea el diagrama y grafo de flujo para un programa que admite hasta 10 números enteros y cuenta cuántos son pares e impares. Calcula la complejidad ciclomática del grafo creado y define los caminos básicos._
