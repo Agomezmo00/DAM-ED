@@ -157,11 +157,19 @@ Para determinar el riesgo de un código evaluado mediante este sistema se ha est
 El valor de V(G) proporciona el número de caminos independientes del conjunto básico de un programa. Un *camino independiente* es cualquier camino del programa que introduce, por lo menos, una condición o conjunto de sentencias. En el diagrama de flujo, un camino independiente constituye una arista (al menos) que no ha sido recorrida previamente en la definición del camino.
 
 
-### Obtención de casos de prueba
+#### Obtención de casos de prueba
 
 El último paso de este tipo de pruebas es determina los casos de prueba que llevan a la ejecución de cada camino. A fin de comprobar cada camino, se escogerán los casos de prueba de manera que las condiciones de los nodos predicado estén adecuadamente establecidas.
 
 Una forma de representar el conjunto de casos de prueba es mediante una tabla en la que indicar el número de camino, la explicación del caso de prueba y el resultado que se espera obtener de dicho caso de prueba.
+
+
+| Camino | Caso de prueba | Resultado esperado |
+| :------- | :------: | :------: | 
+| 1 | a toma valor 50, b mayor que c    | a toma el valor de b |
+| 2 | a toma valor 50, b menor que c    | a toma el valor de c |
+| 3 | a toma valor distinto de 50    | no entra en el bucle, imprime a |
+
 
 _Ejercicio_:
 
@@ -170,4 +178,44 @@ _Crea el diagrama y grafo de flujo para un programa que admite hasta 10 números
 
 ### Clases de equivalencia
 
+Es un método de prueba de caja negra. Se basa en dividir los valores de los campos de entrada de un programa en __clases de equivalencia__. Por ejemplo, supongamos que hay un campo de entrada de una función que debe ser un número de 4 cifras y la primera no puede ser un 0. A partir de esta premisa, se puede establecer una clase de equivalencia no válida; números inferiores a 1000 y otra clase válida, números comprendidos entre 1000 y 9999.
+
+Para identificar las clases, se estudian las condiciones de entrada que tiene el código y se dividen en _clases válidas_ y _clases no válidas_, que agruparán los valores de entrada válidos y no válidos respectivamente.
+
+* Reglas para identificar las clases
+
+1. Por cada rango de valores, se especifica una clase válida y dos no válidas.
+2. Si se especifica un nº de valores, se creará una clase válida y dos no válidas.
+3. Si se especifica una situación del tipo “debe ser” o booleana, se identifica una clase válida y una no válida.
+4. Si se especifica un conjunto de valores admitidos, y el programa trata de forma distinta cada uno de ellos, se crea una clase válida por cada valor, y una no válida.
+5. Si se sospecha que ciertos elementos de una clase no se tratan igual que el resto de la misma, debe dividirse en clases menores.
+
+Tras aplicar estas reglas, se debe obtener una serie de clases de equivalencia válidas y no válidas que hay que definir para cada tipo de condición de entrada.
+
+| Condiciones de entrada | Clases de equivalencia válidas (Nº)| Clases de equivalencia no válidas (Nº) |
+| :------- | :------: | :------: | 
+| 1. Rango | 1 CLASE VÁLIDA <br> Valores dentro del rango | 2 CLASES NO VÁLIDAS <br> valor por debajo y valor por encima del rango |
+| 2. Valor específico | 1 CLASE VÁLIDA <br> Contempla el valor| 2 CLASES NO VÁLIDAS <br> Un valor por encima y un valor por debajo|
+| 3. Miembro de conjunto | 1 CLASE VÁLIDA <br> Una clase por cada uno de los miembros del conjunto | 1 CLASE NO VÁLIDA <br> Un valor que no pertenece al conjunto|
+| 4. Lógica | 1 CLASE VÁLIDA <br> Clase que cumpla la condición | 1 CLASE NO VÁLIDA <br> Clase que no cumpla la condición |
+| 5. Distinto tratamiento | 0 CLASES VÁLIDAS <br> | 0 CLASES VÁLIDAS <br> |
+
+Una vez que se tienen las clases de equivalencia definidas, mediante una tabla se puede expresar las clases para cada condición de entrada. En las filas se definen las clases de equivalencia para la condición de entrada, se define un código para cada clase definida (válidas y no válidas) para definir a partir de él los casos de prueba.
+
+
+* Identificar los casos de prueba
+
+1. Asignar un número único a cada clase de equivalencia.
+2. Se escribe un caso que cubra tantas clases válidas como sea posible hasta que estén todas las clases de equivalencia cubiertas por casos de prueba.
+3. Se escribe un caso de prueba para cada clase no válida.
+
 ### Condiciones límite
+Los casos de prueba que analizan las condiciones en los límites producen mejores resultados. Es habitual que las situaciones límite acumulen defectos del software.
+
+La diferencia entre el análisis de las condiciones límite con las particiones de equivalencia es que en los límites no se elige cualquier elemento de la clase sino aquellos que buscan someter a prueba los márgenes.
+
+* Reglas para identificar los casos de prueba:
+1. Si una condición de entrada especifica un rango delimitado por los valores a y b, se deben generar casos para a, b y casos no válidos justo por debajo y por encima de ambos.
+2. Si una condición de entrada especifica un número de valores, se deben desarrollar casos de prueba que ejerciten los vslores máximo y mínimo, uno más el máximo y uno menos el mínimo.
+3. Aplicar las directrices anteriores a las condiciones de salida.
+4. Si las estructuras de datos internas tienen límites preestablecidos, habría que asegurarse de diseñar un caso de prueba que ejercite la estructuta de datos en sus límites.
