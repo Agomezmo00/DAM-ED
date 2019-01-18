@@ -219,3 +219,9 @@ La diferencia entre el análisis de las condiciones límite con las particiones 
 2. Si una condición de entrada especifica un número de valores, se deben desarrollar casos de prueba que ejerciten los vslores máximo y mínimo, uno más el máximo y uno menos el mínimo.
 3. Aplicar las directrices anteriores a las condiciones de salida.
 4. Si las estructuras de datos internas tienen límites preestablecidos, habría que asegurarse de diseñar un caso de prueba que ejercite la estructuta de datos en sus límites.
+
+
+## Herramientas de depuración
+
+### Recursos Web
+* [ChuWiki](http://chuwiki.chuidiang.org/index.php?title=Empezando_con_el_debugger_de_eclipse)
