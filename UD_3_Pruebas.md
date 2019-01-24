@@ -223,5 +223,27 @@ La diferencia entre el análisis de las condiciones límite con las particiones 
 
 ## Herramientas de depuración
 
-### Recursos Web
+### Aprendiendo a Depurar el código
+
+#### Recursos Web
 * [ChuWiki](http://chuwiki.chuidiang.org/index.php?title=Empezando_con_el_debugger_de_eclipse)
+
+### Pruebas con JUnit
+
+*Sería maravilloso si hubiera algo que probara nuestro programa de forma automática y con frecuencia. Si cada vez que hacemos cambios o añadimos código le decimos a ese algo que pruebe nuestro programa y nos despreocupamos del tema, nos ahorraríamos mucho tiempo de prueba.*
+
+*Afortunadamente, existe ese algo. Podemos hacer un programa que se encargue de probar nuestro programa. Ese programa de pruebas debería ser fácil de lanzar, deberíamos lanzarlo con frecuencia, no debería requerir ninguna intervención por nuestra parte y no debería darnos unos resultados que tengamos que analizar. Únicamente debemos lanzarlo y él sólo debe decirnos "Todas las pruebas han ido bien". O si no hemos tenido suerte, "Han fallado estas pruebas en estos sitios".* [Fuente](http://www.chuidiang.org/java/herramientas/test-automaticos/introduccion-test-automaticos.php)
+
+*JUnit es un conjunto de bibliotecas que son utilizadas en programación para hacer pruebas unitarias de aplicaciones Java.* [Fuente](https://es.wikipedia.org/wiki/JUnit)
+
+[Ejemplo sencillo con JUnit](http://www.chuidiang.org/java/herramientas/test-automaticos/ejemplo-junit.php)
+
+#### Further Reading
+
+* [Desarrollo orientado a los Tests](http://chuwiki.chuidiang.org/index.php?title=Desarrollo_orientado_a_los_test)
+* [TDD: Test Driven Development](http://www.chuidiang.org/java/herramientas/test-automaticos/tdd-test-driven-development.php)
+
+
+
+
+
