@@ -238,6 +238,65 @@ La diferencia entre el análisis de las condiciones límite con las particiones 
 
 [Ejemplo sencillo con JUnit](http://www.chuidiang.org/java/herramientas/test-automaticos/ejemplo-junit.php)
 
+
+### TestCase vs TestSuite
+
+*El concepto fundamental en estas herramientas es el caso de prueba (test case), y la suite de prueba (test suite). Los casos de prueba son clases o módulos que disponen de métodos para probar los métodos de una clase o módulo concreta/o. Así, para cada clase que quisiéramos probar definiríamos su correspondiente clase de caso de prueba. Mediante las suites podemos organizar los casos de prueba, de forma que cada suite agrupa los casos de prueba de módulos que están funcionalmente relacionados.*[Fuente](http://www.jtech.ua.es/j2ee/publico/lja-2012-13/sesion04-apuntes.html)
+
+
+JUnit dispone de una serie de anotaciones que facilitan las pruebas, así como las tareas relacionadas con ellas.
+
+```java
+@Test
+// Indica que el método es de prueba
+
+@Before
+/* 
+
+	Los métodos así anotados se jecutarán antes de cualquier otro método que tenga @Test.
+	Se asocia con la inicialización de objetos.
+
+*/
+
+
+@After
+/* 
+	Los métodos así anotados se jecutarán después de cualquier otro método que tenga @Test.
+	Se asocia con la limpieza de variables de los objetos.
+
+*/
+
+@BeforeClass
+
+/*
+	Se invoca al principio de las pruebas (una sola vez), y solo puede haber un método anotado así en cada clase.
+*/
+
+@AfterClass
+
+/*
+	Se invoca al final de las pruebas (una sola vez), y solo puede haber un método anotado así en cada clase.
+*/
+
+@Ignore()
+/*
+	Por ejemplo en un test todavía no implementado para que no lo ejecute y no falle.
+*/
+
+@RunWith(Parameterized.class)
+@RunWith(Suite.class)
+
+/*
+La anotación @RunWith hace referencia a la clase de JUnit 4 que se encarga de ejecutar las suites. Por otro lado, la anotación SuiteClasses sirve para poner entre llaves, y separadas por comas, todas las clases de prueba que queramos incorporar a la suite. De esta forma, la clase, como se ve, puede quedar vacía perfectamente. Luego el compilador, al procesar las anotaciones, ya se encarga de construir la suite correspondiente con las clases de prueba. Utilizando este método, todas las clases de prueba que agrupemos en la suite deberán estar implementadas en JUnit 4.
+*/
+```
+
+### Pruebas parametrizadas
+
+[Ejemplo](https://www.adictosaltrabajo.com/2016/01/22/introduccion-a-test-parametrizados-con-junit-4/)
+
+
+
 #### Further Reading
 
 * [Desarrollo orientado a los Tests](http://chuwiki.chuidiang.org/index.php?title=Desarrollo_orientado_a_los_test)
