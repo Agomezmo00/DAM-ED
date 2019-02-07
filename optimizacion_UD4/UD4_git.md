@@ -41,5 +41,9 @@ Hay que familiarizarse con el concepto de repositorio de código.
 ## Recursos
 
 [GIT cheat sheet[PDF EN]](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
+
+[Taller de GIT PDF ES](https://ingenieriainformatica.uniovi.es/c/document_library/get_file?uuid=bbd3510e-4a10-4842-a29f-2d75f4bf9c12&groupId=780436)
+
+
 [gitignore.io](https://www.gitignore.io)
 
