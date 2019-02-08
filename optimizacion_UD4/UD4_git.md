@@ -95,7 +95,7 @@ Changes to be committed:
 #
 ```
 
-[Borrar el último commit con reset y revert](http://rogerdudler.github.io/git-guide/index.es.html)
+[Borrar el último commit con reset y revert](https://www.solucionex.com/blog/borrar-ultimo-commit-con-reset-y-revert-en-git)
 
 
 ## Recursos
@@ -112,4 +112,6 @@ Changes to be committed:
 * [Guía sencilla de GIT](http://rogerdudler.github.io/git-guide/index.es.html)
 
 * [gitignore.io](https://www.gitignore.io)
+
+* [GIT en eclipse](https://www.arquitecturajava.com/eclipse-git-repositorios/)
 
