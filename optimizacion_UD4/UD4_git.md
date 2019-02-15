@@ -79,6 +79,38 @@ Hay ocasiones en las que tenemos cosas en una rama sin commitear y surge la nece
 
 *La traducción directa sería algo así como "Petición de Validación". Una Pull Request es la acción de validar un código que se va a mergear de una rama a otra. En este proceso de validación pueden entrar los factores que queramos: Builds (validaciones automáticas), asignación de código a tareas, validaciones manuales por parte del equipo, despliegues, etc.* [Fuente](http://www.nocountryforgeeks.com/pull-requests/)
 
+
+
+### Estrategias de gestión de ramas (branching); git flow
+
+*...Se hablaba de ramas para hacer hot-fixes urgentes, ramas para desarrollar nuevas versiones separadas de las ramas maestras donde está la versión en producción. Ramas para probar nuevas versiones, ramas y repositorios para trabajar con proveedores externos, ramas para hacer pruebas en pre-producción, ramas para que los departamentos de calidad hagan sus pruebas antes de liberar nuevas versiones. Con git podemos crear ramas “como churros”...*
+
+*Sin embargo, esta facilidad para crear ramas también se puede utilizar para hacer el mal y sembrar el terror...*
+
+*Para no acabar en el caos, debemos establecer unas “reglas del juego” que todo el equipo debe respetar. Aunque a grandes rasgos casi todos los proyectos pueden utilizar unas reglas de base comunes, las reglas deben ser flexibles para adaptarse a los cambios que puedan surgir en el tablero de juego; al fin y al cabo, las necesidades y particularidades de cada equipo, empresa o proyecto no son las mismas.*
+
+*¿Y cuáles son estas reglas base comunes? En enero de 2010 Vincent Driessen publicó en su blog un artículo en el que compartía con la comunidad un flujo de trabajo que a él le estaba funcionando: “A successful Git branching model”. Como él mismo cuenta en el artículo (te recomiendo encarecidamente que lo leas) Vincent propone una serie de “reglas” para organizar el trabajo del equipo.* [Fuente](http://aprendegit.com/que-es-git-flow/)
+
+
+#### Ramas master y develop
+
+* El trabajo se organiza en dos ramas principales:
+
+	* Rama __master__: cualquier commit que pongamos en esta rama debe estar __preparado para subir a producción__
+	* Rama __develop__: rama en la que está el código que conformará __la siguiente versión del proyecto__
+
+* Cada vez que se incorpora código a master, tenemos una nueva versión.
+
+* Además de estas dos ramas, Se proponen las siguientes ramas auxiliares:
+
+	* __Feature__: Salen de y vuelven a develop. Se utilizan para desarrollar nuevas características de la aplicación.
+	* __Release__: Salen de develop. Se integran en master o develop. Se utilizan para preparar el siguiente código en producción. En estas ramas se hacen los últimos ajustes y se corrigen los últimos bugs antes de pasar el código a producción incorporándolo a la rama master.
+	* __Hotfix__: Salen de master y se integran en master y develop. Se utilizan para corregir errores y bugs en el código en producción
+
+[Más info git-flow](http://aprendegit.com/que-es-git-flow/)
+[Vídeo estrategias branching Commit Conf](https://www.youtube.com/watch?v=LYn5Tc8O4GE)
+
+
 ### Versatilidad de los comandos en git. Ejemplo de checkout.
 
 * La función principal es para cambiar de rama ```git checkout nombreRama```
@@ -98,6 +130,8 @@ Changes to be committed:
 [Borrar el último commit con reset y revert](https://www.solucionex.com/blog/borrar-ultimo-commit-con-reset-y-revert-en-git)
 
 
+
+
 ## Recursos
 
 * __Ayuda de git__. Prueba a escribir -h a continuación de cualquier comando git. Por ejemplo: ```git branch -h``` y observa la documentación que te muestra. Además, si te equivocas al escribir un comando porque te dejas una letra o lo escribes sin los modificadores adecuados, git *entiende* que es lo que quieres hacer y te ofrece sugerencias.
@@ -113,5 +147,11 @@ Changes to be committed:
 
 * [gitignore.io](https://www.gitignore.io)
 
-* [GIT en eclipse](https://www.arquitecturajava.com/eclipse-git-repositorios/)
+* [Egit](https://www.eclipse.org/egit/)
+
+* [GIT en eclipse (Más antiguo)](https://www.arquitecturajava.com/eclipse-git-repositorios/)
+
+* [Importar a eclipse desde Github o otro repositorio](https://danielme.com/2013/08/07/importar-repositorios-de-github-con-git-o-eclipse/)
+
+* [Ejemplo Proyecto para eclipse](https://github.com/jarroba/PolimorfismoJarroba)
 
