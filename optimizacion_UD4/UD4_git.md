@@ -151,7 +151,7 @@ Al documentar una clase es conveniente incluir:
 
 ### Javadoc
 
-[Javadoc wikipedia](https://es.wikipedia.org/wiki/Javadoc) es una utilidad para la generación de documentación de APIs a partir de código fuente Java. Viene con el propio JDK de Java y el resultado de la documentación que se genera está en formato HTML.
+[Javadoc](https://es.wikipedia.org/wiki/Javadoc) es una utilidad para la generación de documentación de APIs a partir de código fuente Java. Viene con el propio JDK de Java y el resultado de la documentación que se genera está en formato HTML.
 
 A grandes rasgos, es el método estándar para documentar clases de Java. La mayoría de los IDEs lo utilizan para generar de forma automática documentación de las clases, aunque existen otras herramientas que aportan distintas funcionalidades, como [Doxygen](http://www.doxygen.nl).
 
