@@ -132,7 +132,83 @@ Changes to be committed:
 
 ## Documentación
 
-[Javadoc wikipedia](https://es.wikipedia.org/wiki/Javadoc)
+Documentar un proyecto es algo fundamental de cara al mantenimiento posterior. Cuando se desarrolla una clase, es conveniente generar documentación lo suficientemente detallada sobre ella como para que otros programadores sean capaces de usarla sólo con su interfaz. No debe existir necesidad de estudiar su implementación del mismo modo que para manejar una clase del API de Java no es necesario conocer su código fuente.
+
+Al documentar una clase es conveniente incluir:
+
+* Nombre de la clase
+* Descripción general (*brief*) 
+* Versión
+* Autores
+* Documentación de cada constructor o método (especialmente los declarados como públicos):
+	* Nombre del constructor o método
+	* Tipo de retorno
+	* Nombres y tipos de parámetros (si hay)
+	* Descripción general
+	* Descripción de parámetros (si hay)
+	* Descripción del valor que devuelve
+
+
+### Javadoc
+
+[Javadoc wikipedia](https://es.wikipedia.org/wiki/Javadoc) es una utilidad para la generación de documentación de APIs a partir de código fuente Java. Viene con el propio JDK de Java y el resultado de la documentación que se genera está en formato HTML.
+
+A grandes rasgos, es el método estándar para documentar clases de Java. La mayoría de los IDEs lo utilizan para generar de forma automática documentación de las clases, aunque existen otras herramientas que aportan distintas funcionalidades, como [Doxygen](http://www.doxygen.nl).
+
+
+Para que javadoc genere documentación automáticamente hay que cumplir ciertas reglas:
+
+* La documentación para javadoc ha de incluirse entre símbolos de comentario que han de empezar con una barra y doble asterisco, y terminar con un asterisco y barra simple.
+
+```java
+/**
+ * Comentario para javadoc
+ */
+```
+ 
+
+* La ubicación le define a javadoc qué representa el comentario: 
+	* si está justo ANTES de la declaración de clase se considerará un comentario de clase, 
+	* si está justo ANTES de la declaración de un constructor o método se considerará un comentario de ese constructor o método.
+
+* Para indicar a javadoc lo que significan los comentarios incluidos se usan ciertas palabras reservadas (tags) precedidas por "@", dentro de los símbolos de comentario javadoc. Si no existe al menos una línea que comience con @ no se reconocerá el comentario para la documentación de la clase. [Listado JavaSE EN](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javadoc.html#CHDBEFIF)
+
+
+## Refactorización
+
+### ¿En qué consiste refactorizar?
+
+*Refactorizar es un concepto interesante: consiste en mejorar el código poco a poco. Me gusta definirlo con una frase que aparece en el libro: así como con el tiempo el software se deteriora poco a poco, la refactorización debería mejorar el código poco a poco, sin realizar grandes cambios.*
+
+*Cuando uno tiene entre sus manos un programa que no está en muy buenas condiciones, lo primero que desea es rehacerlo todo desde cero. Esto no es ni una posición realista, porque no se suele poder asumir el coste de una demolición y posterior construcción, ni respetuosa con los que lo programaron: no solemos saber las circunstancias en las que fue hecho ni los condicionantes de las decisiones. Frente a este deseo de rehacer todo surge el concepto de refactorización, que anima a ir cambiando el código a pasos pequeños y seguros.* [Fuente](https://www.adictosaltrabajo.com/2015/09/28/repasando-los-clasicos-refactoring-de-martin-fowler/)
+
+La refactorización de código es la reescritura de una funcionalidad manteniendo su interfaz. Esto significa que se reemplaza el código pero se mantienen sus precondiciones y poscondiciones, es decir, lo que se debe aportar y lo que se debe obtener del código, respectivamente.
+
+El objetivo puede ser variado, pero suele involucrar estos aspectos:
+
+* Mejorar la reusabilidad. Crear componentes reutilizables.
+* Optimizar un componente en términos de rendimiento.
+* Corregir bugs provenientes de diseños erróneos.
+* Generalizarlo para otros propósitos o entornos. Por ejemplo, parte del código responsable del acceso a los datos se puede refactorizar utilizando un framework que haga la aplicación independiente del DMBS utilizado.
+* Mejorar la legibilidad del código.
+
+
+### Bad smells ([Malos olores](https://es.wikipedia.org/wiki/Hediondez_del_código))
+
+Son aquellos *síntomas* que se pueden encontrar en el código y que indican que probablemente existan otros problemas más profundos en la calidad del código, de diseño, o de ambos. 
+
+
+* [Listado de algunos bad smells frecuentes](https://blog.intive-fdv.com.ar/repaso-los-code-smells-mas-comunes/)
+
+* [Otro listado de bad smells ED](http://entornos.codeandcoke.com/doku.php?id=apuntes:refactorizacion#bad_smells)
+
+### Refactorización en eclipse
+
+* [Intro básica](https://tutobasico.com/refactoring-eclipse/)
+
+* [Refactorización ED](http://entornos.codeandcoke.com/doku.php?id=apuntes:refactorizacion#refactorizacion_de_eclipse)
+
+
 
 ## Recursos
 
@@ -156,4 +232,6 @@ Changes to be committed:
 * [Importar a eclipse desde Github o otro repositorio](https://danielme.com/2013/08/07/importar-repositorios-de-github-con-git-o-eclipse/)
 
 * [Ejemplo Proyecto para eclipse](https://github.com/jarroba/PolimorfismoJarroba)
+
+* [Intro JAVADOC PREZI](https://prezi.com/t8wgiyfo4w54/introduccion-a-javadoc/)
 
