@@ -268,6 +268,28 @@ public class GeneraPrimos {
 }
 ```
 
+```java
+
+public class demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int primos[];
+		int limite = 125;
+		primos = GeneraPrimos.generarPrimos(limite);
+		
+		System.out.println("Lista de números primos entre 0 y "+limite);
+		for (int i=0; i<primos.length; i++) {
+			System.out.println(primos[i]);
+		}
+	}
+
+}
+
+```
+* [Refactorización números primos](http://elvex.ugr.es/decsai/java/pdf/8B-Refactoring.pdf)
+
+
 ## Recursos
 
 * __Ayuda de git__. Prueba a escribir -h a continuación de cualquier comando git. Por ejemplo: ```git branch -h``` y observa la documentación que te muestra. Además, si te equivocas al escribir un comando porque te dejas una letra o lo escribes sin los modificadores adecuados, git *entiende* que es lo que quieres hacer y te ofrece sugerencias.
