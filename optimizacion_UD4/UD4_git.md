@@ -288,6 +288,7 @@ public class demo {
 
 ```
 * [Refactorización números primos](http://elvex.ugr.es/decsai/java/pdf/8B-Refactoring.pdf)
+* [Solución Refactorización primos](http://elvex.ugr.es/decsai/java/pdf/8B-Refactoring.solution.pdf)
 
 
 ## Recursos
