@@ -74,4 +74,5 @@ Diagrama de perfiles El diagrama de perfil es un nuevo tipo de diagrama introduc
 
 * [ArgoUML](http://argouml.tigris.org)
 * [Plugin Papyrus Eclipse](https://www.eclipse.org/papyrus/index.php)
-[PACMAN Java](https://github.com/dtschust/javapacman.git)
+* [Papyrus USER GUIDE EN](https://wiki.eclipse.org/Papyrus_User_Guide)
+* [PACMAN Java](https://github.com/dtschust/javapacman.git)
