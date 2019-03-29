@@ -37,7 +37,8 @@ Derivan de los de comportamiento y se centran en el flujo de control y datos den
 
 * Visión global de los diagramas en UML2
 
-![alt-text](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/UML_diagrams_overview_pt.svg/792px-UML_diagrams_overview_pt.svg.png "Diagramas en UML2, Fuente: Wikipedia")
+![alt-text](https://upload.wikimedia.org/wikipedia/commons/f/fc/Uml_diagram-es.svg
+ "Diagramas en UML2, Fuente: Wikipedia")
 
 
 #### Diagramas de estructura:
@@ -71,4 +72,6 @@ Diagrama de perfiles El diagrama de perfil es un nuevo tipo de diagrama introduc
 
 ### Otros recursos
 
+* [ArgoUML](http://argouml.tigris.org)
+* [Plugin Papyrus Eclipse](https://www.eclipse.org/papyrus/index.php)
 [PACMAN Java](https://github.com/dtschust/javapacman.git)
