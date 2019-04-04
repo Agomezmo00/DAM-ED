@@ -37,32 +37,74 @@ Derivan de los de comportamiento y se centran en el flujo de control y datos den
 
 * Visión global de los diagramas en UML2
 
-![alt-text](https://upload.wikimedia.org/wikipedia/commons/f/fc/Uml_diagram-es.svg
+![example](https://upload.wikimedia.org/wikipedia/commons/f/fc/Uml_diagram-es.svg
  "Diagramas en UML2, Fuente: Wikipedia")
 
 
 #### Diagramas de estructura:
 
-* __[Diagrama de clases](https://manuel.cillero.es/doc/metrica-3/tecnicas/diagrama-de-clases/)__. Los diagramas de clase son los más utilizados. Muestran las clases del sistema, sus atributos y las operaciones de cada clase, así como las relaciones entre cada clase. En la mayoría de las herramientas de modelado, cada clase se divide en tres partes:
+##### __[Diagrama de clases](https://manuel.cillero.es/doc/metrica-3/tecnicas/diagrama-de-clases/)__. 
+
+Los diagramas de clase son los más utilizados. Muestran las clases del sistema, sus atributos y las operaciones de cada clase, así como las relaciones entre cada clase. En la mayoría de las herramientas de modelado, cada clase se divide en tres partes:
 
 	* El nombre en la parte superior, 
 	* Los atributos en el centro
 	* Los métodos en la parte inferior. 
 
+###### Visibilidad de los miembros (atributos y métodos) en los diagramas
+
+* `+` Público
+* `#` Protegido
+* `-` Privado
+* `~` Por defecto (Acceso de paquete, al símbolo de la virgulilla en inglés se le denomina tilde).
+
+###### Relaciones
+
 En sistemas grandes con muchas clases relacionadas, las clases se agrupan para crear diagramas de clases. Las [relaciones entre las clases PDF ES](http://elvex.ugr.es/decsai/java/pdf/3C-Relaciones.pdf) se muestran por flechas, cuyo aspecto varía en función del tipo de relación.
 
+* Asociación 
+	* Simple
+	* Inversa
+	* Reflexiva
+	* Agregación
+* Generalización / Especificación (Herencia)
+* Composición (Dependencia)
+
+###### Multiplicidad de las relaciones
+* 0..1 Cero o una vez
+* 1 Una y solo una vez
+* * Desde cero a varias veces
+* 1..* Desde uno a varias veces
+* M..N Entre M y N veces
+* N veces
 
 
-* __Diagrama de componentes__. Un diagrama de componentes muestra la relación estructural de los componentes de un sistema de software. Estos se utilizan principalmente cuando se trabaja con sistemas complejos que tienen muchos componentes. Los componentes se comunican entre sí mediante interfaces. Las interfaces se enlazan mediante conectores.
+##### Ejemplo diagrama de clases
 
-* __Diagrama de despliegue__. Un diagrama de despliegue muestra el hardware de su sistema y el software de ese hardware. Los diagramas de implementación son útiles cuando la solución de software se despliega en varios equipos, cada uno con una configuración única.
+![carrito](https://www.uml-diagrams.org/examples/class-example-online-shopping-domain.png
+ "Ejemplo diagrama carrito de la compra. Fuente:https://www.uml-diagrams.org")
 
-* __Diagrama de objetos__. Los diagramas de objetos, a veces denominados diagramas de instancia, son muy similares a los diagramas de clases. Al igual que los diagramas de clases, también muestran la relación entre los objetos, pero usan ejemplos del mundo real. Se utilizan para mostrar cómo se verá un sistema en un momento dado. Debido a que hay datos disponibles en los objetos, a menudo se utilizan para explicar relaciones complejas entre objetos.
 
-* __Diagrama de paquetes__. Como su nombre indica, un diagrama de paquetes muestra las dependencias entre diferentes paquetes de un sistema.
+##### __Diagrama de componentes__. 
+* Un diagrama de componentes muestra la relación estructural de los componentes de un sistema de software. Estos se utilizan principalmente cuando se trabaja con sistemas complejos que tienen muchos componentes. Los componentes se comunican entre sí mediante interfaces. Las interfaces se enlazan mediante conectores.
+
+![componentes](https://www.uml-diagrams.org/component-diagrams/component-diagram-overview.png
+ "Ejemplo diagrama de componentes. Fuente:https://www.uml-diagrams.org")
+
+
+
+##### __Diagrama de despliegue__. 
+* Un diagrama de despliegue muestra el hardware de su sistema y el software de ese hardware. Los diagramas de implementación son útiles cuando la solución de software se despliega en varios equipos, cada uno con una configuración única.
+
+##### __Diagrama de objetos__. 
+* Los diagramas de objetos, a veces denominados diagramas de instancia, son muy similares a los diagramas de clases. Al igual que los diagramas de clases, también muestran la relación entre los objetos, pero usan ejemplos del mundo real. Se utilizan para mostrar cómo se verá un sistema en un momento dado. Debido a que hay datos disponibles en los objetos, a menudo se utilizan para explicar relaciones complejas entre objetos.
+
+##### __Diagrama de paquetes__. 
+* Como su nombre indica, un diagrama de paquetes muestra las dependencias entre diferentes paquetes de un sistema.
 Diagrama de perfiles El diagrama de perfil es un nuevo tipo de diagrama introducido en UML 2. Este es un tipo de diagrama que se utiliza muy raramente en cualquier especificación.
 
-* __Diagrama de estructura compuesta__. Los diagramas de estructura compuesta se utilizan para mostrar la estructura interna de una clase.
+##### __Diagrama de estructura compuesta__. 
+* Los diagramas de estructura compuesta se utilizan para mostrar la estructura interna de una clase.
 
 
 
@@ -75,4 +117,5 @@ Diagrama de perfiles El diagrama de perfil es un nuevo tipo de diagrama introduc
 * [ArgoUML](http://argouml.tigris.org)
 * [Plugin Papyrus Eclipse](https://www.eclipse.org/papyrus/index.php)
 * [Papyrus USER GUIDE EN](https://wiki.eclipse.org/Papyrus_User_Guide)
+* [Object AID URL Eclipse](http://www.objectaid.com/update/current)
 * [PACMAN Java](https://github.com/dtschust/javapacman.git)
