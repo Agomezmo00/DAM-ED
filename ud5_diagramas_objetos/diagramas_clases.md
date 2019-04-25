@@ -96,12 +96,20 @@ En sistemas grandes con muchas clases relacionadas, las clases se agrupan para c
 ##### __Diagrama de despliegue__. 
 * Un diagrama de despliegue muestra el hardware de su sistema y el software de ese hardware. Los diagramas de implementación son útiles cuando la solución de software se despliega en varios equipos, cada uno con una configuración única.
 
+![depliegue](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/UML_Deployment_Diagram.svg/1280px-UML_Deployment_Diagram.svg.png "Ejemplo Diagrama de despliegue. Fuente:https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/UML_Deployment_Diagram.svg/1280px-UML_Deployment_Diagram.svg.png")
+
 ##### __Diagrama de objetos__. 
 * Los diagramas de objetos, a veces denominados diagramas de instancia, son muy similares a los diagramas de clases. Al igual que los diagramas de clases, también muestran la relación entre los objetos, pero usan ejemplos del mundo real. Se utilizan para mostrar cómo se verá un sistema en un momento dado. Debido a que hay datos disponibles en los objetos, a menudo se utilizan para explicar relaciones complejas entre objetos.
 
+![objetos](https://www.uml-diagrams.org/class-diagrams/object-diagram-overview.png "Ejemplo Diagrama de objetos Fuente: https://www.uml-diagrams.org/class-diagrams/object-diagram-overview.png")
+
 ##### __Diagrama de paquetes__. 
 * Como su nombre indica, un diagrama de paquetes muestra las dependencias entre diferentes paquetes de un sistema.
-Diagrama de perfiles El diagrama de perfil es un nuevo tipo de diagrama introducido en UML 2. Este es un tipo de diagrama que se utiliza muy raramente en cualquier especificación.
+
+![paquetes](https://www.uml-diagrams.org/package-diagrams/package-diagram-elements.png "Ejemplo Diagrama de paquetes Fuente:https://www.uml-diagrams.org/package-diagrams/package-diagram-elements.png")
+
+#### __Diagrama de perfiles__. 
+* El diagrama de perfil es un nuevo tipo de diagrama introducido en UML 2. Este es un tipo de diagrama que se utiliza muy raramente en cualquier especificación.
 
 ##### __Diagrama de estructura compuesta__. 
 * Los diagramas de estructura compuesta se utilizan para mostrar la estructura interna de una clase.
