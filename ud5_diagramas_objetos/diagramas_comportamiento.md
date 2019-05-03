@@ -9,6 +9,9 @@ Tratan de describir la estructura *dinámica* del modelo. Se enfocan en aquello 
 *Los diagramas de caso de uso modelan la funcionalidad del sistema usando actores y casos de uso. Los casos de uso son servicios o funciones provistas por el sistema para sus usuarios.* [Fuente](https://ingsotfwarekarlacevallos.wordpress.com/2015/06/04/uml-casos-de-uso/)
 
 
+![Diagrama de caso de uso](https://www.uml-diagrams.org/use-case-diagrams/use-case-diagram-elements.png "Ejemplo de diagrama de caso de uso Fuente: https://www.uml-diagrams.org/use-case-diagrams/use-case-diagram-elements.png")
+
+
 #### Elementos que intervienen en el diagrama de casos de uso:
 
 * Caso de uso
