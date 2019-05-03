@@ -124,6 +124,7 @@ En sistemas grandes con muchas clases relacionadas, las clases se agrupan para c
 
 * [ArgoUML](http://argouml.tigris.org)
 * [Plugin Papyrus Eclipse](https://www.eclipse.org/papyrus/index.php)
+  * [Papyrus Diagrama de clases Youtube EN ](https://www.youtube.com/watch?v=Pim22rLtsW0&list=PLoWne5q-c9E_Q2_eAUZKPDA5K0V-O5zXs&index=7&t=0s)
 * [Papyrus USER GUIDE EN](https://wiki.eclipse.org/Papyrus_User_Guide)
 * [Object AID URL Eclipse](http://www.objectaid.com/update/current)
 * [PACMAN Java](https://github.com/dtschust/javapacman.git)
