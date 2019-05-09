@@ -83,7 +83,7 @@ Representan una unidad funcional del sistema que se lleva a cabo tras una acció
   * _Mensajes_ que estos objetos se envían entre sí:
     * Síncronos: No devuelven el control al objeto que los llama hasta que han terminado su ejecución. Representados por una flecha de punta rellena y línea continua. 
     * Asíncronos: El objeto que envía un mensaje asíncrono continúa su ejecución, una vez que lo envía, sin esperar a que finalice la ejecución del método al que ha llamado. Se representa mediante una flecha de línea continua y cabeza abierta
-    * De retorno: Son opcionales, representan la llegada de mensajes de confirmación, se representan mediante una línea discontinua.
+    * De retorno: Son opcionales, representan la llegada de mensajes de confirmación, se representan mediante flecha de línea discontinua.
 
   * _Una línea de vida_, indicadora del tiempo en el __eje vertical__ mediante una __línea discontinua__ que indica el tiempo de vida del objeto, es decir, el tiempo en el que existe el objeto. Con la línea de vida se puede señalar:
     * Creación de objetos. Mediante flechas de llamada que terminan en el objeto creado (se puede añadir la palabra _create_ sobre la flecha)
