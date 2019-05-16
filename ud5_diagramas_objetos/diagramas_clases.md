@@ -118,7 +118,8 @@ En sistemas grandes con muchas clases relacionadas, las clases se agrupan para c
 
 ### Recursos UML
 
-[UML Fernando Berzal PDF ES](http://elvex.ugr.es/decsai/java/pdf/3E-UML.pdf)
+* [UML Fernando Berzal PDF ES](http://elvex.ugr.es/decsai/java/pdf/3E-UML.pdf)
+* [Diagramas de clases UNIZAR PDF ES](http://ocw.unizar.es/ciencias-experimentales/modelos-matematicos-en-bases-de-datos/uml/03UML_DiagramaClases.pdf)
 
 ### Otros recursos
 
